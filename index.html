@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Yoav's speed-num's</title>
+</head>
+
+<body onload="init()">
+    <h1>SPEED CLICK</h1>
+    <h2 class="game-status">count as fast as you can!</h2>
+    <div class="game-pannel">
+        </section>
+        <div class="stop-watch">your Time <br><span id='seconds-counter'>0</span></div> <br>
+        <div class="difficulty">
+            <button onclick="setGameLvl(1)">Begginer</button>
+            <button onclick="setGameLvl(2)">Intermediate</button>
+            <button onclick="setGameLvl(3)">Pro</button>
+            <button onclick="setGameLvl(4)">Insane</button>
+        </div><br>
+
+        <table class="game-table" border:1px solid black>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+
+body {
+    color: rgb(172, 211, 224);
+    background-color: rgb(77, 74, 74);
+    background-image: url('./img/fast-numbers.jpg');
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4037af;
+    background-color: #f9d9c4;
+
+}
+
+.stop-watch {
+    margin-bottom: 30 px;
+    color: goldenrod;
+    font-size: 22px;
+    background-color: black;
+    text-align: center;
+    padding: auto;
+    border: 1px solid black;
+    user-select: none;
+}
+
+.difficulty {
+    margin: auto;
+    text-align: center;
+    margin: bottom 20px;
+}
+
+.difficulty button {
+    font-size: 20px;
+    margin: auto;
+    padding: 2px;
+    border: none;
+    color:#000000;
+    background-color:#52898b;
+    cursor: pointer;
+}
+.difficulty button:hover {
+    color:black;
+    background-color:#45d1d6;
+}
+
+
+table, tr ,td {
+    margin: auto;
+    padding: auto;
+    border: 1px solid #f5deb3;
+    background-color:#1f1e1e;
+}
+
+tr, td {
+    padding: 15px;
+}
+
+td {
+    color: rgb(185, 230, 230);
+}
+
+td:hover {
+    cursor: pointer;
+    background-color: #f89d2591;
+}
+
+.win {
+    color: #4037af;
+    background-color: #f9d9c4;
+}
+
+   
