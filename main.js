@@ -9,6 +9,7 @@ let gTimerCount;
 
 const init = () => {
     gChooseLvl = setGameLvl(1);
+    gCounter = 0;
 };
 
 const setGameLvl = (num) => {
@@ -32,6 +33,7 @@ const setGameLvl = (num) => {
 
     clearInterval(gTimerCount);
     gSeconds = 0;
+    gCounter = 0;
     const seconds = document.getElementById('seconds-counter');
     seconds.innerText = gSeconds;
     renderBoard();
@@ -95,7 +97,6 @@ const numClicked = (clickedNum, targetNum) => {
 };
 
 const gameWon = () => {
-    console.log('win!!')
     const titleElement = document.querySelector('.game-status');
     const gameTabelElement = document.querySelector('.game-table');
     const cellElement = document.querySelector('.td');
