@@ -29,7 +29,7 @@ const setGameLvl = (num) => {
     } else {
         gBoard = createBoard(16);
         gBoardSize = 4;
-    };
+    }
 
     clearInterval(gTimerCount);
     gSeconds = 0;
@@ -54,9 +54,9 @@ const renderBoard = () => {
         for (let j = 0; j < length; j++) {
             const currNum = gBoard.pop();
             strHtml += `<td <button onclick="numClicked(this,${[currNum]})">${currNum}</button>`;
-        };
+        }
         strHtml += `</tr>`;
-    };
+    }
     gameTabelElement.innerHTML = strHtml;
 };
 
@@ -64,7 +64,7 @@ const getGameNums = (min, max) => {
     const nums = [];
     for (let i = min; i <= max; i++) {
         nums.push(i);
-    };
+    }
     return nums;
 };
 
@@ -72,11 +72,10 @@ const shuffle = (items) => {
     let randomIdx, keep, i;
     for (i = items.length - 1; i > 0; i--) {
         randomIdx = getRandomIntInclusive(0, items.length - 1);
-
         keep = items[i];
         items[i] = items[randomIdx];
         items[randomIdx] = keep;
-    };
+    }
     return items;
 };
 
@@ -88,12 +87,12 @@ const numClicked = (clickedNum, targetNum) => {
 
         if (gCounter === 1) {
             timer();
-        };
+        }
         if (targetNum === gBoardSize ** 2) {
             clearInterval(gTimerCount);
             gameWon();
-        };
-    };
+        }
+    }
 };
 
 const gameWon = () => {
